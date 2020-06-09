@@ -17,7 +17,12 @@
 .footer{
     background-color: #d1c4e9;
     margin: 0px auto;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 20px 20px 20px;
+}
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
 }
 body{
     padding:50px 0px 0px 0px;
@@ -26,4 +31,9 @@ body{
 
 .navbar-dark {
      background-color: #512DA8;
+}
+
+.lay
+{
+    padding: 50px;
 }
