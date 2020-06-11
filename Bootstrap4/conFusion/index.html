@@ -72,6 +72,93 @@
             </div>
         </div>
     </div>
+    <div id="resevemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve A Title </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="Number Of Guest" class="col-sm-4 col-form-label">Number Of Guest</label>
+                            <div class="col col-sm">
+                             <!-- Default inline 1-->
+                            <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+                            <label class="custom-control-label" for="defaultInline1">1</label>
+                            </div>
+
+                            <!-- Default inline 2-->
+                            <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+                            <label class="custom-control-label" for="defaultInline2">2</label>
+                            </div>
+
+                            <!-- Default inline 3-->
+                            <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+                            <label class="custom-control-label" for="defaultInline3">3</label>
+                            </div>
+    
+                            <!-- Default inline 1-->
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
+                                <label class="custom-control-label" for="defaultInline4">4</label>
+                                </div>
+  
+                                <!-- Default inline 2-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="defaultInline5" name="inlineDefaultRadiosExample">
+                                <label class="custom-control-label" for="defaultInline5">5</label>
+                                </div>
+  
+                                <!-- Default inline 3-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="defaultInline6" name="inlineDefaultRadiosExample">
+                                <label class="custom-control-label" for="defaultInline6">6</label>
+                                </div>
+                                </div>     
+                        </div>
+                        <div class="form-group row">
+                            <label for="Date and Time" class="col-sm-4 col-form-label">Date and Time</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="Date and Time" name="Date and Time" placeholder="Date">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="Date and Time" name="Date and Time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Section" class="col-sm-4 col-form-label">Section</label>
+                            <div class="col-sm">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Nonsmoking
+                                </label>
+                                <label class="btn btn-danger">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                            
+
+                        <div class="form-group row">
+                            <div class="offset-sm-4 col-12 col-sm-4 " style="padding-top: 20px;">
+                                <button type="submit" class="btn btn-secondary">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                            
+                                
+                        </div>
+                    </form>
+                    </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -85,14 +172,74 @@
                     <div class="col-12 col-sm" style="padding: 50px;">
                        
                         <a role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" href="#formid">Reserve Table</a>
+                        data-toggle="modal" data-target="#resevemodal">Reserve Table</a>
                     </div>
             </div>
         </div>
     </header>
 
     <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid"
+                            src="img/uthappizza.png" alt="Uthappizza">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+                            <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                Italian pizza, topped with Cerignola olives, ripe vine
+                                cherry tomatoes, Vidalia onion, Guntur chillies and
+                                Buffalo Paneer.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid"
+                        src="img/buffet.png" alt="Weekend Grand Buffet">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
+                           <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        </div>  
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid"
+                        src="img/alberto.png" alt="Alberto Somayya">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carousel-pause">
+                	    <span class="fa fa-pause"></span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carousel-play">
+                	    <span class="fa fa-play"></span>
+                    </button>
+                </div>
+                </div>
+ 
+             </div>
+        </div>
+ 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -270,7 +417,15 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>
             $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
+             $("#mycarousel").carousel( { interval:2000 });
+             $("#carousel-pause").click(function(){
+                 $("#mycarousel").carousel('pause');
+                })
+                $("#carousel-play").click(function(){
+                    $("#mycarousel").carousel('cycle');
+
+                })
+
             });
         </script>
 </body>
